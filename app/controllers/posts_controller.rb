@@ -12,13 +12,6 @@ class PostsController < ApplicationController
   # GET /posts/1.json
 
   def show
-    # if params[:id] == 1
-    #   render text: 'show_post1'
-    # elsif params[:id] == 2
-    #   render text:'show_post2'
-    # else
-    #   render text: "#{params[:id]}"
-    # end
   end
 
 
@@ -74,20 +67,20 @@ class PostsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+
     def set_post
       @post = Post.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+
     def post_params
-      params.require(:post).permit(:title, :body, :github_url)
+      params.require(:post).permit(:title, :body)
     end
 
-  private
+
   def authenticate
     authenticate_or_request_with_http_basic do |name, password|
-      name == "admin" && password == "secret"
+      name == "" && password == ""  #Add your own username/password in order to create new posts and edit existing ones
     end
   end
 end
