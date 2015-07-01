@@ -1,0 +1,163 @@
+<head>
+	<style>
+		.back{
+			width: 3.4;
+			height: 5.3;
+			margin-left: 15px;
+			margin-top: 15px;
+		}
+
+		.thumb_image{
+			float: left;
+			margin-left: 100px;
+			margin-top: 100px;
+		}
+
+
+
+		.thumbnail_image{
+			margin-left: 58px;
+		}
+
+		#date{
+			margin-left: 150px;
+			margin-top: 200px;
+			position: absolute;
+			padding-bottom: 10px;
+		}
+
+		#url{
+			margin-left: 182px;
+			margin-top: 225px;
+			position: absolute;
+			padding-top: 15px; 
+		}
+
+		.content {
+			/*margin-left: 300px;*/
+			padding-top: 50px;
+			margin-left: 25%;
+			max-width: 700px;
+			float: left;
+			
+		}
+
+		.nav_title {
+			font-family: 'Chronicle SSm A', 'Chronicle SSm B', Georgia, 'times new roman', times, serif;
+  			font-weight: 400;
+  			font-style: normal;
+  			color: #333;
+  			font-size: 24px;
+  			letter-spacing: 0px;
+  			float: left;
+		}
+
+		.float_clear{
+			clear: both;
+		}
+
+		.nav_url {
+			line-height: 10px;
+			margin-top: 15px;
+			float: left;
+		}
+
+		.nav_wrapper {
+			text-align: left;
+			margin-left: 250px;
+			/*margin-right:100px;*/
+		
+
+		}
+
+		a:link, a:visited {
+			color:#333;
+			text-decoration: none;
+		}
+
+		a:hover{
+			color:black;
+		}
+
+		.nav_item {
+			/*padding-top: 4px;*/ 
+			width: 25%;
+			border-left: 1px solid #CCC;
+			padding-left: 8px;
+			margin-left: 9px;
+			float: left;
+			display: block;
+			margin-right: 5%;
+
+
+		} 
+
+		.nav_links {
+			float: right;
+			margin-left: 450px;
+
+
+		}
+
+		.nav_wrapper {
+			position: fixed;
+			left: 20px;
+			top: 20px;
+			margin-left: 23%;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body> 
+<div class="back">
+		<a href="/posts">
+			<img src="http://www.hamiltonkent.com/media/2425/icon-ios7-arrow-back-128.png"
+			width="50" height="50" border="0">
+		</a> 
+<!-- 	<div class="sidebar">
+			<h2> Open Payments Data </h2> 
+		<div class="thumbnail_image"> 
+			<img src="http://www.propublica.org/images/ngen/gypsy_big_image/20140930-med-disclosures-630x420.jpg" width="150" height="100" border="0" class="thumb_image">
+		</div>
+		<div id="date">
+			<p> Creation date: 6/16/2015 </p>
+		</div> 
+		<div id="url">
+			<a href="https://github.com/rahimamaan/OpenPaymentsData"> Code on Github</a>
+		</div> 
+	</div> -->
+</div>
+
+<div class="nav_wrapper">
+	<span class="nav_masthead">
+		<div class="nav_title">Amaan Rahim</div>
+		<div class="float_clear"> </div>
+			<div class="nav_url">
+				<a href="/"> AMAAN.COM </a>
+			</div>
+	</span>
+	<span class="nav_links">
+		<div class="nav_item">
+			<a href="http://github.com/rahimamaan">github</a>
+		</div>
+		<div class="nav_item">
+			<a href="http://linkedin.com/in/amaanrahim">linkedin</a>
+		</div>
+	</span>
+</div>
+
+<div class="content">
+
+	<p id="notice"><%= notice %></p>
+
+	<%= render :partial => @post %>
+
+	<!-- <%= link_to 'Edit', edit_post_path(@post) %> 
+	<%= link_to 'Back', posts_path %> -->
+	
+</div>
+</body>

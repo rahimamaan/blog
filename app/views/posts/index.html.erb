@@ -1,0 +1,209 @@
+<head>
+	<%= stylesheet_link_tag "posts.scss" %>
+	<style>
+		body {
+			/*background-color: #D8D8D8*/
+			background-color: white; 
+			padding-bottom: 0px;
+			height: 100%;
+		}
+
+		hr { 
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+		.container {
+			background:rgba(255,255,255,0.3);
+			display: block;
+		}
+		.thumbnail_wrapper {
+			display: inline-table;
+			margin-left: 50px;
+			margin-right:50px;
+			/*margin: auto;*/
+
+		}
+
+		.thumbnail_container_horiz {
+			float: left;
+			margin: 10px;
+			position: relative;
+			width: 250px;
+			height: 250px;
+		}
+
+		.thumbnail_image {
+			position: absolute;
+			left: 0;
+			top: 0;
+			border-radius: 6px;
+		}
+
+		.thumbnail_title_container {
+			z-index: 100;
+			position: absolute;
+		 	bottom: 10px;
+			left: 10px;
+		    background: rgba(0, 0, 0, .5);
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			padding: 3px;
+		}
+
+		.thumbnail_title {
+			font-family: 'Gotham Rounded A', 'Gotham Rounded B', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+  			color: #FFF;
+  			text-align: center;
+  			margin: 5px;
+		}
+
+		.nav_title {
+			font-family: 'Chronicle SSm A', 'Chronicle SSm B', Georgia, 'times new roman', times, serif;
+  			font-weight: 400;
+  			font-style: normal;
+  			color: #333;
+  			font-size: 24px;
+  			letter-spacing: 0px;
+  			float: left;
+		}
+
+		.float_clear{
+			clear: both;
+		}
+
+		.nav_url {
+			line-height: 10px;
+			margin-top: 15px;
+			float: left;
+		}
+
+		.nav_wrapper {
+			text-align: left;
+			margin-top: 30px;
+			margin-bottom: 5px;
+			margin-left: 100px;
+			margin-right:100px;
+		}
+
+		a:link, a:visited {
+			color:#333;
+			text-decoration: none;
+		}
+
+		a:hover{
+			color:black;
+		}
+
+		.contact{
+			/*background: #333;*/
+			padding: 6px;
+			text-align: right;
+			/*color: white;*/
+		}
+
+		.contact_icon{
+			height: 50px;
+			width: 50px;
+		}
+
+
+
+		.footer {
+			background-color: #333;
+			padding: 10px;
+			bottom: 0;
+			margin-bottom: 0;
+			position: absolute;
+			width:100%;
+			height:60px;
+			
+		}
+
+/*		.footer2 {
+			background: black;
+			padding:45px;
+			bottom: ;
+			position: absolute;
+			width: 100%;
+		}*/
+
+	</style>
+</head>
+
+<body>
+<p id="notice"><%= notice %></p>
+
+<div class="nav_wrapper">
+	<span class="nav_masthead">
+		<div class="nav_title">Amaan Rahim</div>
+		<div class="float_clear"> </div>
+			<div class="nav_url">
+				<a href="/"> AMAAN.COM </a>
+			</div>
+	</span>
+</div>
+
+
+<hr> 
+
+<center>
+<div class="thumbnail_wrapper">
+	<div class="thumbnail_container_horiz">
+		<a href="/posts/2">
+			<img src="https://www.cms.gov/OpenPayments/Resources/Images/Open-Payments-in-Context.png" width="250" height="250" border="0" class="thumbnail_image">
+			<span class="thumbnail_title_container">
+				<span class="thumbnail_title">Open Payments</span>
+			</span>
+		</a>
+	</div> 
+	<div class="thumbnail_container_horiz">
+		<a href="/posts/1">
+			<img src="http://s3.amazonaws.com/advancedcms/zJ6vk6MWRW4ZciYemCpL_website6.jpg" width="250" height="250" border="0" class="thumbnail_image">
+			<span class="thumbnail_title_container">
+				<span class="thumbnail_title">Hello World</span>
+			</span>
+		</a>
+	</div> 
+</div> 
+
+<!-- <div class="main">
+	<div class="container">
+		<!-- <%= render :partial => @posts %> 
+		<%= link_to 'New Post', new_post_path %> 
+	</div>
+</div> --> 
+</center>
+	<footer class="footer">
+		<footer class="footer1">
+			<div class="contact"> 
+				<center>
+					<a href="mailto:rahim.amaan@gmail.com">
+						<img src="https://openclipart.org/image/2400px/svg_to_png/216530/Mail-Icon-White-on-Black.png" class="contact_icon" height="50" width="50">
+					</a> 
+					<a href="https://linkedin.com/in/amaanrahim">
+						<img src="http://uploads.striking.ly/page/images/icons/linkedin-icon.png" height="50" width"50" class="contact_icon">
+					</a>
+					<a href="https://github.com/rahimamaan">
+						<img src="http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-black/foundation/foundation_social-github/foundation_social-github_flat-circle-white-on-black_512x512.png" height="50" width="50" class="contact_icon">
+					</a>
+					<a href="http://quora.com/Amaan-Rahim">
+						<img src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/quora-128.png" height="50" width="50" class="contact_icon">
+					</a>
+					</a>
+				</center>
+			</div>
+		</footer>
+		<footer>
+		</footer> 
+	</footer>
+</body>
+
